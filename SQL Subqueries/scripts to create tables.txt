@@ -1,0 +1,32 @@
+-- Create the customers table
+CREATE TABLE customers
+(
+    Customer_ID CHAR(8) PRIMARY KEY,
+	Bracket_cust_id CHAR(10),
+    Customer_Name VARCHAR(255),
+    Segment VARCHAR(255),
+    Age INT,
+	Country VARCHAR(255),
+	City VARCHAR(255),
+	State VARCHAR(255),
+    Postal_Code INT,
+	Region VARCHAR(255)
+);
+
+-- Create the sales table
+CREATE TABLE sales
+(
+    Order_line INT,
+	Order_ID VARCHAR(255),
+	Order_Date DATE,
+	Ship_Date DATE,
+    Ship_Mode VARCHAR(255),
+    Customer_ID CHAR(8),
+	Product_ID VARCHAR(255),
+	Category VARCHAR(255),
+	Sub_Category VARCHAR(255),
+	Sales DECIMAL(10,5),
+	Quantity INT,
+    Discount DECIMAL(4,2),
+	Profit DECIMAL(10,5)
+);
